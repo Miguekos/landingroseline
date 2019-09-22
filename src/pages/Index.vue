@@ -79,7 +79,7 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+// import { mapActions } from "vuex";
 export default {
   data() {
     return {
@@ -95,39 +95,8 @@ export default {
     };
   },
   methods: {
-    ...mapActions("auth", ["login", "validarUser"]),
-    async onSubmit() {
-      this.loading1 = true;
-      // this.getCliente();
-      const data = {
-        email: this.form.username,
-        password: this.form.password
-      };
-      // console.log(data);
-      const response = await this.login(data);
-      const validar = response[0];
-      console.log(validar);
-      if (validar) {
-        console.log("entro en validar");
-        this.$q.notify({
-          message: `Wellcome: ${validar.name}`,
-          color: "green"
-        });
-        console.log(validar);
-        localStorage.setItem("jwt", true);
-        localStorage.setItem("datadelusuario", JSON.stringify(validar));
-        this.$q.cookies.set("accToken", "cookie_value");
-        this.$router.push("/");
-        // this.$router.push({ name: "HelloWorld" });
-      } else {
-        this.$q.notify({
-          message: "validar",
-          color: "red"
-        });
-      }
-      this.loading1 = false;
-      // this.login()
-    }
+    // ...mapActions("auth", ["login", "validarUser"]),
+    async onSubmit() {}
   },
   async mounted() {}
 };
