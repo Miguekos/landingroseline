@@ -43,7 +43,7 @@ export default {
 <style scoped>
 .loginfondo {
   /* background-color: #365552; */
-  background-image: url("../statics/fondo.png");
+  /*background-image: url("../statics/fondo2.png");*/
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
