@@ -104,7 +104,8 @@ export default {
     // ...mapActions("auth", ["login", "validarUser"]),
     async onSubmit() {
       this.loading1 = true;
-      console.log(this.form);
+      this.loading1 = false;
+      // console.log(this.form);
     }
   },
   async mounted() {}
