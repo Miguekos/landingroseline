@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="q-pa-md">
-      <q-card class="q-pa-md shadow-2 rounded-borders">
+    <div class="q-pa-sm">
+      <q-card class="q-pa-sm shadow-2 rounded-borders">
         <!--          <div class="text-h6 text-center">Iniciar Session</div>-->
-        <div class="q-pa-md flex-center flex">
+        <div class="q-pa-sm flex-center flex">
           <div>
             <!-- <q-img src="/statics/01.png" style="width: 180px"></q-img> -->
             <img
@@ -17,7 +17,7 @@
 
         <div class="q-pa-md">
           <q-table
-            title="Treats"
+            title="leads"
             dense
             :data="data"
             :columns="columns"
@@ -65,16 +65,7 @@ export default {
         { name: "paquetes", label: "Paquetes", field: "paquetes" },
         { name: "comentarios", label: "Comentarios", field: "comentarios" }
       ],
-      data: [
-        {
-          name: "Frozen Yogurt",
-          celular: 159,
-          correo: 6.0,
-          servicio: 24,
-          paquetes: 4.0,
-          comentarios: 87
-        }
-      ]
+      data: []
     };
   },
   methods: {
