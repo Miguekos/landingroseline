@@ -19,7 +19,7 @@
                 color="grey"
                 id="username"
                 type="text"
-                v-model.trim="form.username"
+                v-model.trim="form.name"
                 label="Nombres"
                 required
                 autofocus
@@ -30,8 +30,8 @@
                 color="grey"
                 id="telf"
                 type="text"
-                v-model.trim="form.telf"
-                label="Telular"
+                v-model.trim="form.celular"
+                label="Celular"
                 required
               />
               <q-input
@@ -104,7 +104,21 @@ export default {
     // ...mapActions("auth", ["login", "validarUser"]),
     async onSubmit() {
       this.loading1 = true;
-      this.loading1 = false;
+      this.$axios
+        .post(`http://localhost:3000/api/prospectos`, this.form)
+        .then(() => {
+          this.loading1 = false;
+          this.$q.notify({
+            message: "Registrado Correctamente",
+            color: "green",
+            position: "top-right"
+          });
+          this.form = {};
+        })
+        .catch(() => {
+          this.loading1 = false;
+        });
+
       // console.log(this.form);
     }
   },
@@ -114,7 +128,7 @@ export default {
 <style>
 .q-img__content > div {
   position: absolute;
-  width: 200px;
+  width: 170px;
   padding: 16px;
   color: #ffffff;
   background: rgba(45, 45, 45, 0);
