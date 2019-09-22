@@ -85,7 +85,7 @@ export default {
     this.$axios
       .get(`http://localhost:3000/api/prospectos`)
       .then(resp => {
-        console.log(resp.data);
+        // console.log(resp.data);
         this.data = resp.data;
         this.$q.notify({
           message: "Prospectos Cargados",
