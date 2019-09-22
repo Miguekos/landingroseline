@@ -74,7 +74,7 @@ export default {
   },
   async mounted() {
     this.$axios
-      .get(`http://localhost:3000/api/prospectos`)
+      .get(`http://144.217.14.34:3000/api/prospectos`)
       .then(resp => {
         // console.log(resp.data);
         this.data = resp.data;

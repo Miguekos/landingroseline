@@ -105,7 +105,7 @@ export default {
     async onSubmit() {
       this.loading1 = true;
       this.$axios
-        .post(`http://localhost:3000/api/prospectos`, this.form)
+        .post(`http://144.217.14.34:3000/api/prospectos`, this.form)
         .then(() => {
           this.loading1 = false;
           this.$q.notify({
