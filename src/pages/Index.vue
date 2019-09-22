@@ -2,8 +2,8 @@
   <div>
     <template>
       <q-img :src="url">
-        <div class="text-subtitle2 flex flex-center">
-          <q-img :src="url2" spinner-color="white" style="width: 250px" />
+        <div class="text-subtitle2">
+          <q-img :src="url2" spinner-color="white" />
         </div>
       </q-img>
     </template>
@@ -114,6 +114,7 @@ export default {
 <style>
 .q-img__content > div {
   position: absolute;
+  width: 200px;
   padding: 16px;
   color: #ffffff;
   background: rgba(45, 45, 45, 0);
