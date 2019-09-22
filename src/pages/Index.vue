@@ -77,7 +77,7 @@
             </div>
           </div>
           <q-card-actions>
-            <q-btn :loading="loading1" type="submit" class="fit"
+            <q-btn :loading="loading1" type="submit" class="fit" color="grey"
               >Suscribir</q-btn
             >
           </q-card-actions>
