@@ -13,7 +13,7 @@
 
         <div class="q-pa-md">
           <q-table
-            title="leads"
+            title="Leads Feria de Novios Septiembre 2019"
             dense
             :data="data"
             :columns="columns"

@@ -72,7 +72,6 @@
                 type="text"
                 v-model.trim="form.comentarios"
                 label="Comentarios"
-                required
               />
             </div>
           </div>
