@@ -2,7 +2,7 @@
   "name": "landingeroseline",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Landing Roseline",
+  "productName": "Roseline",
   "cordovaId": "org.cordova.quasar.app",
   "author": "Miguel <miguekos1233@gmail.com>",
   "private": true,
