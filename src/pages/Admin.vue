@@ -92,3 +92,13 @@ export default {
   }
 };
 </script>
+<style>
+.q-img__content > div {
+  position: absolute;
+  width: 170px;
+  padding: 16px;
+  color: #ffffff;
+  background: rgba(45, 45, 45, 0);
+  padding-top: 25px;
+}
+</style>
