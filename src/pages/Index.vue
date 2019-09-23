@@ -96,7 +96,14 @@ export default {
       loading1: false,
       drawerState: false,
       rememberMe: true,
-      form: {}
+      form: {
+        name: "",
+        celular: "",
+        correo: "",
+        servicio: "",
+        paquetes: "",
+        comentarios: ""
+      }
     };
   },
   methods: {
