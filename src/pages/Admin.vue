@@ -10,7 +10,7 @@
               class="float-left"
               spinner-color="white"
               sizes="30px"
-              src="/statics/logoLogin.png"
+              src="/statics/LogoBlanco.png"
             />
           </div>
         </div>
