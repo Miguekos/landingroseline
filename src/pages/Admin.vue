@@ -3,17 +3,13 @@
     <div class="q-pa-sm">
       <q-card class="q-pa-sm shadow-2 rounded-borders">
         <!--          <div class="text-h6 text-center">Iniciar Session</div>-->
-        <div class="q-pa-sm flex-center flex">
-          <div>
-            <!-- <q-img src="/statics/01.png" style="width: 180px"></q-img> -->
-            <img
-              class="float-left"
-              spinner-color="white"
-              sizes="30px"
-              src="/statics/LogoBlanco.png"
-            />
-          </div>
-        </div>
+        <template>
+          <q-img :src="url">
+            <div class="text-subtitle2">
+              <q-img :src="url2" spinner-color="white" />
+            </div>
+          </q-img>
+        </template>
 
         <div class="q-pa-md">
           <q-table
@@ -34,6 +30,8 @@
 export default {
   data() {
     return {
+      url: "../statics/fondo3.png",
+      url2: "../statics/LogoBlanco.png",
       loading1: false,
       drawerState: false,
       rememberMe: true,
